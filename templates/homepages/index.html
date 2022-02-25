@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('{% static 'img/homepage.jpg' %}')">
+<div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <div class="site-heading">
+                <h1>Joseph Smith & The Restoration</h1><br><br>
+                <span class="subheading">Spencer King - Section 3</span>
+                {% comment %} <span class="subheading">And if you didn't know already, I am gay :)</span> {% endcomment %}
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+ <!-- Content section-->
+ <section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2>Something Here...</h2>
+                <p class="lead">Another thing here.</p>
+                <p class="mb-0">Something Awesome</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<!-- Image element - set the background image for the header in the line below-->
+<div class="py-5 bg-image-full" style="background-image: url('{% static 'img/homepage.JPG' %}')">
+    <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+    <div style="height: 20rem"></div>
+    </div>
+    
+    <!-- Content section-->
+    <section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2>Something Here...</h2>
+                <p class="lead">Another thing here.</p>
+                <p class="mb-0">Something Awesome</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    {% endblock %}

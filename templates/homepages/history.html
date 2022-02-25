@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+ <!-- Header - set the background image for the header in the line below-->
+ <header class="py-5 bg-image-full" style="background-image: url('{% static 'img/homepage.jpg' %}')">
+    <div class="text-center my-5">
+        {% comment %} <img class="img-fluid rounded-circle mb-4" src="{% static 'img/face.jpg' %}" alt="Face" width='150' height='150' /> {% endcomment %}
+        <h1 class="site-heading">Brief History</h1>
+        {% comment %} <p class="text-black-50 mb-0">A very high level version</p> {% endcomment %}
+    </div>
+</header>
+
+<!-- Content section-->
+<section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2>HISTORY OF THE RESTORATION</h2>
+                <p class="mb-0">In a galaxy far away.....</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
