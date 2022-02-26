@@ -14,7 +14,8 @@ def secondaryPageView(request) :
     return render(request, 'homepages/secondarysrc.html')
 
 def testimonyPageView(request) :
-    data = Response.objects.all()
+    
+    data = Response.objects.all().order_by('-id')
 
     context = {
         "data" : data
@@ -33,7 +34,7 @@ def saveTestimonyPageView(request) :
         try:
             response.save()
 
-            data = Response.objects.all()
+            data = Response.objects.all().order_by('-id')
 
             context = {
                 "data" : data

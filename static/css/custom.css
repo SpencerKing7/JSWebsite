@@ -1,0 +1,7 @@
+textarea { vertical-align: top; }
+
+.dropdown-item:hover {
+    background-color: rgb(39, 44, 48);
+}
+
+.navbar-toggler:focus { outline: 1px none; }

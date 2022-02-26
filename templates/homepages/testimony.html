@@ -19,7 +19,8 @@
             <div class="col-lg-6">
                 <h4>My Testimony</h4>
                 <p class="lead">When I was young, I was taught all about the gospel of Jesus Christ and the restoration of His church. From a young age I have always known that the gospel was true. I have always felt a connection to our Heavenly Father and to my Savior, Jesus Christ. I have prayed and asked God with a sincere heart to know if everything on this site is true. Through the power of the Holy Ghost I have felt peace and confirmation that this church is true, that the Book of Mormon is God’s word, and that Joseph Smith was a true prophet who restored Christ’s church to the earth. I know that we will be happier as we choose to be close to God and live the gospel that can be found in this church.<br><br>~<i>Spencer King</i></p>
-                <h6>Share your testimony with others <a href="#share" style="text-decoration: underline">here</a>.</h6>
+                
+                <p>Share your testimony with others <a href="#share" style="text-decoration: underline">here</a>.</p>
                 
                 <!-- Divider-->
                 <hr class="my-4" />
@@ -31,14 +32,14 @@
                 {% endfor %}
 
                 
-                
+                <p><b>Share here!</b></p>
                 <form method="post" id="share" action="{% url 'saveTest' %}">
                     {% csrf_token %}
 
                     <label name="name" style="width: 150px">Name:</label>
                     <input id="name" name="name" type="text" style="width: 250px" required><br><br>
 
-                    <label id="testimony" for="testimony" style="width: 150px">Your Response:</label>
+                    <label id="testimony" for="testimony" style="width: 150px">Your Testimony:</label>
                     <textarea id="testimony" name="testimony" rows="4" cols="40" maxlength="2000" required></textarea>
 
                     <br><br>
