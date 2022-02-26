@@ -5,9 +5,6 @@ from django.shortcuts import render
 def indexPageView(request) :
     return render(request, 'homepages/index.html')
 
-def historyPageView(request) :
-    return render(request, 'homepages/history.html')
-
 def primaryPageView(request) :
     return render(request, 'homepages/primarysrc.html')
 
