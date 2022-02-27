@@ -41,7 +41,7 @@ def saveTestimonyPageView(request) :
             # }
 
             # return render(request, 'homepages/testimony.html', context)
-            return testimonyPageView()
+            return testimonyPageView(request)
 
         except:
             return HttpResponse("Error - Please try again.")
