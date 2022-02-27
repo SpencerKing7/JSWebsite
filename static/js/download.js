@@ -1,3 +1,3 @@
 function download(){
-    window.open("downloads/Restoration_Proclamation.pdf", "_blank")
+    window.open("./downloads/Restoration_Proclamation.pdf", "_blank")
 }
