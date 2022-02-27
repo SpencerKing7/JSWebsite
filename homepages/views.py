@@ -34,13 +34,14 @@ def saveTestimonyPageView(request) :
         try:
             response.save()
 
-            data = Response.objects.all().order_by('-id')
+            # data = Response.objects.all().order_by('-id')
 
-            context = {
-                "data" : data
-            }
+            # context = {
+            #     "data" : data
+            # }
 
-            return render(request, 'homepages/testimony.html', context)
+            # return render(request, 'homepages/testimony.html', context)
+            return testimonyPageView()
 
         except:
             return HttpResponse("Error - Please try again.")
