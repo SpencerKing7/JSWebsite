@@ -79,7 +79,11 @@
                 <br>
                 <hr class="my-4" />
 
-                <p class="mb-0" style="text-align: right"><a href="{% url 'secondary' %}">Secondary Sources &#8594;</a></p>
+                {% comment %} Page Navigation {% endcomment %}
+                <p class="mb-0">
+                    <a href="{% url 'testimony' %}">&#8592; Testimonies</a>
+                    <span style="float: right"><a href="{% url 'secondary' %}">Secondary Sources &#8594;</a></span>
+                </p>
             </div>
         </div>
     </div>
