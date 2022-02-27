@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+ <!-- Header - set the background image for the header in the line below-->
+ <header class="py-5 bg-image-full" style="background-image: url('{% static 'img/brown2.jpg' %}')">
+    <div class="text-center my-5">
+        {% comment %} <img class="img-fluid rounded-circle mb-4" src="{% static 'img/face.jpg' %}" alt="Face" width='150' height='150' /> {% endcomment %}
+        <h1 class="site-heading">More Sources</h1>
+        {% comment %} <p class="text-black-50 mb-0">A very high level version</p> {% endcomment %}
+    </div>
+</header>
+
+<!-- Content section-->
+<section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+
+                {% comment %} Other Sources {% endcomment %}
+                <p><b>These are additional sources I like about the restoration and principles of the gospel:</b></p>
+
+                <ol>
+                    <li>Restoration Proclamation</li>
+                        <span style="font-size: 15px; text-decoration: underline">
+                            <a href="{% static 'downloads/Restoration_Proclamation.pdf' %}" style="color: blue" download>Download</a>
+                        </span>
+                    <li>Evaluating Latter-day Saint Doctrine</li>
+                        <span style="font-size: 15px; color: blue; text-decoration: underline">
+                            <a href="{% static 'downloads/Sweat_MacKay_Dirkmaat_Doctrine.pdf' %}" style="color: blue" download>Download</a>
+                        </span>
+                    <li>"That They Might Come to Understanding": Revelation as Process</li>
+                        <span style="font-size: 15px; color: blue; text-decoration: underline">
+                            <a href="{% static 'downloads/Revelation_As_Process.pdf' %}" style="color: blue" download>Download</a>
+                        </span>
+                    <li>History of Joseph Smith</li>
+                        <span style="font-size: 15px; color: blue; text-decoration: underline">
+                            <a href="{% static 'downloads/History_of_JS.pdf' %}" style="color: blue" download>Download</a>
+                        </span>
+                    <li>Excerpts of President Nelson and Elder Uchtdorf's thoughts on the First Vision</li>
+                        <span style="font-size: 15px; color: blue; text-decoration: underline">
+                            <a href="{% static 'downloads/Nelson_Uchtdorf_Excerpts.pdf' %}" style="color: blue" download>Download</a>
+                        </span>
+                </ol>
+
+
+
+
+
+                <!-- Divider-->
+                <br>
+                <hr class="my-4" />
+
+                {% comment %} Page Navigation {% endcomment %}
+                <p class="mb-0">
+                    <a href="{% url 'secondary' %}">&#8592; Secondary Sources</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

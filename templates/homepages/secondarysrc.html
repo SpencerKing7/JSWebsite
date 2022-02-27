@@ -17,10 +17,95 @@
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-lg-9">
-                <p>What is a secondary source?</p>
-                <p class="lead">Definition:</p>
+                {% comment %} What is a primary source? {% endcomment %}
+                <p><b>What is a secondary source?</b><br>Secondary Sources are one step removed from primary sources, though they often quote or otherwise use primary sources. They can cover the same topic, but add a layer of interpretation and analysis. Secondary sources can include:</p>
+                <ul>
+                    <li>Most books about a topic</li>
+                    <li>Someone reporting what they heard or read from a primary source</li>
+                    <li>Scholarly or other articles about a topic, especially by people not directly involved</li>
+                    <li>Documentaries</li>
+                </ul>
+                <p>*It is important to note that secondary sources aren't always accurate and contain bias.</p>
 
-                <p class="mb-0"><a href="{% url 'primary' %}">&#8592; Primary Sources</a></p>
+                {% comment %} Secondary sources {% endcomment %}
+                <h4>Secondary sources of the restoration:</h4>
+                <br>
+
+                <ol>
+                    {% comment %} List item #1 {% endcomment %}
+                    <li><i><b>Here is an insightful essay about the First Vision Account. Four were primary accounts, five are secondary accounts:</b></i></li>
+                        <ul>
+                            <li>Read the essay <a href="https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/first-vision-accounts?lang=eng" 
+                                style="text-decoration: underline" target="_blank">here</a>.
+                            </li>
+                            <li>This is my favorite depiction of this experience. The artist is a BYU Professor named Anthony Sweat.</li>
+                            <br>
+                            <img src="{% static 'img/SweatVision.jpg' %}" style='width: 90%; object-fit: contain'>
+                            <br><br>
+                        </ul>
+
+                    {% comment %} List item #2 {% endcomment %}
+                    <li><i><b>Translation of the Book of Mormon</b></i></li>
+                        <ul>
+                            <li>Another interesting <a href="https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/book-of-mormon-translation?lang=eng" 
+                                style="text-decoration: underline" target="_blank">essay</a>
+                                 which discusses the process of translating the Book of Mormon and the instruments used to do it.
+                            </li>
+                            <li>Watch this video about the translation of the Book of Mormon</li>
+                                <br>
+                                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 90%; height: 90%; }</style>
+                                <div class="embed-container">
+                                    <iframe src='//players.brightcove.net/1241706627001/default_default/index.html?videoId=5694092470001' allowfullscreen frameborder=0></iframe>
+                                </div>
+                            
+                        </ul>
+
+                    {% comment %} List item #3 {% endcomment %}
+                    <li><i><b>An important revelation regarding order in the church</b></i></li>
+                        <ul>
+                            <li>This is an <a href="https://www.churchofjesuschrist.org/study/manual/revelations-in-context/all-things-must-be-done-in-order?lang=eng" 
+                                style="text-decoration: underline" target="_blank">article</a> written about the context of this revelation
+                            </li>
+                            <li>Doctrine & Covenants <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/28?lang=eng" 
+                                style="text-decoration: underline" target="_blank">28</a>, 
+                                <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/43?lang=eng" 
+                                style="text-decoration: underline" target="_blank">43</a>
+                            </li>
+                            <br>
+                        </ul>
+
+                    {% comment %} List item #4 {% endcomment %}
+                    <li><i><b>Context regarding the Church's Law of Consecration</b></i></li>
+                        <ul>
+                            <li>Read the background <a href="https://www.churchofjesuschrist.org/study/manual/revelations-in-context/newel-k-whitney-and-the-united-firm?lang=eng" 
+                                style="text-decoration: underline" target="_blank">here</a>.
+                            </li>
+                            <li>Other places to read the revelations regarding this law can be found in D&C 
+                                <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/70?lang=eng" 
+                                style="text-decoration: underline" target="_blank">70</a>, 
+                                <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/78?lang=eng" 
+                                style="text-decoration: underline" target="_blank">78</a>, 
+                                <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/82?lang=eng" 
+                                style="text-decoration: underline" target="_blank">82</a>, 
+                                <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/92?lang=eng" 
+                                style="text-decoration: underline" target="_blank">92</a>, 
+                                <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/96?lang=eng" 
+                                style="text-decoration: underline" target="_blank">96</a>, 
+                                <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/104?lang=eng" 
+                                style="text-decoration: underline" target="_blank">104</a>
+                            </li>
+                        </ul>
+                </ol>
+
+                <!-- Divider-->
+                <br>
+                <hr class="my-4" />
+
+                {% comment %} Page Navigation {% endcomment %}
+                <p class="mb-0">
+                    <a href="{% url 'primary' %}">&#8592; Primary Sources</a>
+                    <span style="float: right"><a href="{% url 'other' %}">More Sources &#8594;</a></span>
+                </p>
             </div>
         </div>
     </div>

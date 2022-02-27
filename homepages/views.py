@@ -45,4 +45,7 @@ def saveTestimonyPageView(request) :
         except:
             return HttpResponse("Error - Please try again.")
 
+def otherSourcesPageView(request) :
+    return render(request, 'homepages/othersrc.html')
+
     
