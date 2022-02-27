@@ -3,12 +3,12 @@
 {% block content %}
 
 
- <!-- Header - set the background image for the header in the line below-->
- <header class="py-5 bg-image-full" style="background-image: url('{% static 'img/first_vision_joseph_smith.jpeg' %}')">
+<!-- Header - set the background image for the header in the line below-->
+ <header class="py-5 bg-image-full" style="background-image: url('{% static 'img/brown2.jpg' %}')">
     <div class="text-center my-5">
-        {% comment %} <img class="img-fluid rounded-circle mb-4" src="{% static 'img/face.jpg' %}" alt="Face" width='150' height='150' /> {% endcomment %}
+
         <h1 class="site-heading">Primary Sources</h1>
-        {% comment %} <p class="text-black-50 mb-0">A very high level version</p> {% endcomment %}
+
     </div>
 </header>
 
@@ -16,9 +16,66 @@
 <section class="py-5">
     <div class="container my-5">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <h2>PRIMARY SOURCES OF THE RESTORATION</h2>
-                <p class="mb-0">In a galaxy far away.....</p>
+            <div class="col-lg-9">
+
+                {% comment %} What is a primary source? {% endcomment %}
+                <p><b>What is a primary source?</b><br>Primary Sources are immediate, first-hand accounts of a topic, from people who had a direct connection with it. Primary sources can include:</p>
+                <ul>
+                    <li>Texts of original documents</li>
+                    <li>Newspaper reports by people who witnessed an event</li>
+                    <li>Speeches, diaries, letters and interviews</li>
+                    <li>Photographs, video, or audio that capture an event</li>
+                </ul>
+                <p>*It is important to note that primary sources are the most valid of historical sources.</p>
+
+                {% comment %} Primary sources {% endcomment %}
+                <h4>Primary sources of the restoration:</h4>
+                <br>
+
+                <ol>
+                    {% comment %} List item #1 {% endcomment %}
+                    <li><i>Joseph's account of the First Vision</i></li>
+                        <ul>
+                            <li>Read his account here: <a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/js-h/1.11-19?lang=eng#p11" style="text-decoration: underline" target="_blank">Joseph Smith - History 1:11-19</a></li>
+                            <li>Watch this video that shows this experience using all 9 of his first-hand written accounts:<br><br>
+                        
+                                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 90%; height: 90%; }</style>
+                                <div class='embed-container'>
+                                    <iframe src="https://www.youtube.com/embed/RBvk_6_dW6k" frameborder='0' allowfullscreen></iframe>
+                                </div>
+                            </li>
+                        </ul>
+
+                    {% comment %} List item #2 {% endcomment %}
+                    <li><i>Joseph being visited by an angel, Moroni to direct him to the buried gold plates in a nearby hill</i></li>
+                        <ul>
+                            <li>Read his account here: <a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/js-h/1.27-53?lang=eng#p27" style="text-decoration: underline" target="_blank">Joseph Smith - History 1:27-53</a></li>
+                            <li>Also here: <a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/js-h/1.53,59?lang=eng#p53" style="text-decoration: underline" target="_blank">Joseph Smith - History 1:53, 59</a></li>
+                            <br>
+                            <img src="{% static 'img/MoroniToJS.jpg' %}" style='width: 90%; object-fit: contain'>
+                            <br><br>
+                        </ul>
+
+                    {% comment %} List item #3 {% endcomment %}
+                    <li><i>Important revelation regarding baptism for the remission of sins. And an account of Joseph and Oliver Cowdery's bapstims</i></li>
+                        <ul>
+                            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/js-h/1.68-72?lang=eng#p68" style="text-decoration: underline" target="_blank">Joseph Smith - History 1:68-72</a></li>
+                            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/13?lang=eng" style="text-decoration: underline" target="_blank">Doctrine & Covenants 13</a></li>
+                            <br>
+                            <img src="{% static 'img/joseph_baptizes_oliver_parson.jpeg' %}" style='width: 90%; object-fit: contain'>
+                            <br><br>
+                        </ul>
+
+                    {% comment %} List item #4 {% endcomment %}
+                    <li><i>Ancient apostles Peter, James, and John confer the Melchizedek Priesthood upon Joseph Smith and Oliver Cowdery</i></li>
+                        <ul>
+                            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/128.20?lang=eng#p20" style="text-decoration: underline" target="_blank">Doctrine & Covenants 128:20</a></li>
+                            <br>
+                            <img src="{% static 'img/priesthood.jpg' %}" style='width: 90%; object-fit: contain'>
+                        </ul>
+                </ol>
+
+                <p class="mb-0" style="text-align: right"><a href="{% url 'secondary' %}">Secondary Sources &#8594;</a></p>
             </div>
         </div>
     </div>
