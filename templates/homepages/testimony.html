@@ -43,7 +43,7 @@
                     <input id="name" name="name" type="text" style="width: 250px" required><br><br>
 
                     <label id="testimony" for="testimony" style="width: 150px">Your Testimony:</label><br>
-                    <textarea id="testimony" name="testimony" rows="4" cols="40" maxlength="2000" required></textarea>
+                    <textarea id="testimony" name="testimony" rows="4" cols="40" style="max-width: 95%" maxlength="2000" required></textarea>
 
                     <br><br>
                     <button type="submit" class="btn btn-primary" style="width: 200px">Share</button>
@@ -55,7 +55,7 @@
 
                 {% comment %} Page Navigation {% endcomment %}
                 <p class="mb-0">
-                    <a href="{% url 'index' %}">&#8592; History of the Restoration</a>
+                    <a href="{% url 'index' %}">&#8592; History</a>
                     <span style="float: right"><a href="{% url 'primary' %}">Sources &#8594;</a></span>
                 </p>
             </div>
