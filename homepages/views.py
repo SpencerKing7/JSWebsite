@@ -34,13 +34,6 @@ def saveTestimonyPageView(request) :
         try:
             response.save()
 
-            # data = Response.objects.all().order_by('-id')
-
-            # context = {
-            #     "data" : data
-            # }
-
-            # return render(request, 'homepages/testimony.html', context)
             return testimonyPageView(request)
 
         except:
