@@ -34,9 +34,9 @@
 
                 
                 {% comment %} <p><b>Share here!</b></p> {% endcomment %}
-                <h3>Share here!</h3>
+                <h3 id="share">Share here!</h3>
                 <br>
-                <form method="post" id="share" action="{% url 'saveTest' %}">
+                <form method="post" action="{% url 'saveTest' %}">
                     {% csrf_token %}
 
                     <label name="name" style="width: 150px">Name:</label><br>
